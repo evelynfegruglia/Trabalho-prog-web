@@ -26,7 +26,7 @@ const getTaskList = async () => {
 const updateTaskConcluido = async (id, concluido) => {
     console.log("update task concluido", id, concluido)
     return await updateDoc(doc(db, "todo", id), {
-        concluido: concluido
+        concluida: concluido
     })
 }
 

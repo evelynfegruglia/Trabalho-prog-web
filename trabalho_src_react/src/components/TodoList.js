@@ -15,11 +15,12 @@ const TodoList = () => {
             return {
                 id: doc.id,
                 ...doc.data(),
+                
             }
         });
 
         console.log("items", items)
-
+        
         setTasks(items)
     }
 
@@ -58,7 +59,7 @@ const TodoList = () => {
         {tasks.map((task) => (
             <label className="checkbox" key={task.id}>
                 <input type="checkbox"
-                    checked={task.concluido}
+                    checked={task.concluida}
                     onChange={(event) => onChangeTask(event, task)} />
                 <div className="titulo-tarefa">{task.tarefa}</div>
                 <button class="botao-excluir" onClick={(event) => onDeleteTask(event, task)}>X</button>
