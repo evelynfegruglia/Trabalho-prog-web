@@ -6,7 +6,6 @@ import img2 from './Elementos/geometrico.png'
 
 const Tela1 = () =>{
   return (
-<body>
   <div className = "container">
     <div className="home">
       <div className="logo">
@@ -16,22 +15,20 @@ const Tela1 = () =>{
     </div>
     <div className="segundapagina">
       <div className = "bordinha">
-        <h1 className="cabecalho_segundapagina">GERENCIE</h1>
-        <h1 className="cabecalho_segundapagina">SUAS TAREFAS</h1>
+        <h1 className="cabecalho_segundapagina">GERENCIE <br />SUAS TAREFAS</h1>
         <div className="quadrados">
           <div className="listarTarefas">
             <img src={img1}/>
-            <Link to="/tela4"><p className="opcoes">Listar Tarefas</p></Link> 
+            <Link to="/lista"><p className="opcoes">Listar Tarefas</p></Link> 
           </div>
           <div className="cadastrarTarefas">
             <img src={img2}/>
-            <Link to="/tela3"><p className="opcoes">Cadastrar Tarefas</p></Link>
+            <Link to="/cadastro"><p className="opcoes">Cadastrar Tarefas</p></Link>
           </div>
         </div>
       </div>
     </div>
   </div>
-  </body>
   );
 }
 
