@@ -22,7 +22,7 @@ const Tela3 = () =>{
       <div className = "container">
         <div className="cadastro">
           <div className="titulo">
-            <h1 className="tituloCadastro" style={{ width: "400px", margin: "0 auto" }}>OLÁ, GOSTARIA DE INSERIR UMA TAREFA PENDENTE?</h1>
+            <h1 className="tituloCadastro" style={{ width: "400px" }}>OLÁ, GOSTARIA DE INSERIR UMA TAREFA PENDENTE?</h1>
           </div>
         </div>
         <div className="formulario">
