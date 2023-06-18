@@ -12,6 +12,7 @@ const Tela3 = () =>{
       await createTask(tarefa)
         .then(() => {
           alert("Tarefa cadastrada!")
+          setTarefa("")
         })
         .catch(() => {
           alert("Falha ao cadastrar.")
@@ -19,22 +20,22 @@ const Tela3 = () =>{
     }
 
     return (
-      <div className = "container">
+      <div className = "container" style={{backgroundColor: "#b2b6f4"}}>
         <div className="cadastro">
           <div className="titulo">
-            <h1 className="tituloCadastro" style={{ width: "400px" }}>OLÁ, GOSTARIA DE INSERIR UMA TAREFA PENDENTE?</h1>
+            <h1 className="tituloCadastro" style={{ width: "600px" }}>OLÁ, GOSTARIA DE ADICIONAR UMA TAREFA PENDENTE?</h1>
           </div>
         </div>
         <div className="formulario">
           <div className="coluna1"></div>
           <div className="coluna3">
             <input type="text" value={tarefa} onChange={(event) => setTarefa(event.target.value)}/>
-            <button onClick={submitTask}>Enviar</button>
+            <button className="botao-cadastrar-tarefa" onClick={submitTask}>+</button>
           </div>
         </div>
           
       <div class="footer">
-          <Link to="/lista"><button class="button">Lista</button></Link>
+          <Link to="/lista"><button class="button">Ver lista de tarefas</button></Link>
       </div>
       </div>
   );

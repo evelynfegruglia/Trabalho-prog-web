@@ -8,9 +8,8 @@ html{
 body{
     margin: 0%;
 }
-.titulo{
-    height: 50%;
-    margin: 100px;
+.titulo {
+    padding: 50px;
 }
 .tituloCadastro{
     color: #7C67F0;
@@ -21,10 +20,11 @@ body{
     text-align: left;
 }
 input{
-    background-color: #B2B6F4;
-    width: 60%;
+    /*background-color: #B2B6F4;*/
+    background: #FFF;
+    width: 100%;
 	margin: 0 auto;
-	padding: 10px;
+	padding: 15px 20px;
 	border: none;
 	border-radius: 5px;
     
@@ -54,4 +54,18 @@ button{
 i{
     font-size: 30px;
     color: white;
+}
+.botao-cadastrar-tarefa{
+    font-size:40px;
+    color:white;
+    font-weight:bold;
+    height: 60px;
+    width: 60px;
+    
+}
+
+.formulario .coluna3 {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
 }
